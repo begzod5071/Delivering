@@ -224,6 +224,9 @@ transform: translateY(-20px);
   .list__blockquote{
     font-size: 10px;
   }
+  .section{
+    padding: 10px 0;
+  }
   @keyframes kady {
     0%{
       transform: translateX(-20px);
