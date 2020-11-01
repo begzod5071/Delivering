@@ -1,0 +1,232 @@
+
+@font-face {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/livvic-v5-latin-regular.      woff2') format('woff2'),
+  url('../fonts/livvic-v5-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: loca
+  url('../fonts/livvic-v5-latin-500.woff2') format('woff2'),
+  url('../fonts/livvic-v5-latin-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Livvic';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src:        url('../fonts/livvic-v5-latin-500italic.woff2') format('woff2'),
+  url('../fonts/livvic-v5-latin-500italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/livvic-v5-latin-600.woff2') format('woff2'),
+  url('../fonts/livvic-v5-latin-600.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:  url('../fonts/livvic-v5-latin-700.woff2') format('woff2'),
+  url('../fonts/livvic-v5-latin-700.woff') format('woff');
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:  "Livvic", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #004047;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+
+}
+.section {
+  padding: 140px 0;
+}
+
+.section-title {
+  max-width: 932px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+}
+.title__span {
+  color: #79C8C7;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+.list__item {
+  max-width: 350px;
+  text-align: center;
+  }
+  .list__item:not(:last-child){
+    margin-right: 30px;
+  }
+.list__item::after{
+  display: block;
+  content: "";
+  width: 62px;
+  height: 62px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list__item--kady::after{
+  background-image: url("../img/kady.png");
+  animation-name: kady;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+.list__item--aiysha::after{
+  background-image: url("../img/aiysha.png");
+  animation-name: kady;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-direction: reverse ;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.list__item--arthur::after{
+  background-image: url("../img/arthur.png");
+  animation-name: kady;
+  animation-duration: 3s;
+  animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.list__blockquote {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.list__name {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+  margin-bottom: 2px;
+}
+.list__profession {
+  margin: 0;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+@keyframes kady{
+  0%{
+transform: translateY(-20px);
+  }
+  50%{
+transform: translateY(20px);
+  }
+  100%{
+transform: translateY(-20px);
+  }
+
+}
+@media only screen and (max-width: 790px){
+  .list__item{
+    margin-bottom: 20px;
+  }
+  @keyframes kady {
+    0%{
+      transform: translateX(-20px);
+        }
+        50%{
+      transform: translateX(20px);
+        }
+        100%{
+      transform: translateX(-20px);
+        }
+  }
+}
