@@ -218,6 +218,12 @@ transform: translateY(-20px);
   .list__item{
     margin-bottom: 20px;
   }
+  .section-title{
+    font-size: 22px;
+  }
+  .list__blockquote{
+    font-size: 10px;
+  }
   @keyframes kady {
     0%{
       transform: translateX(-20px);
