@@ -101,6 +101,7 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
 
+
 }
 .section {
   padding: 140px 0;
@@ -226,6 +227,9 @@ transform: translateY(-20px);
   }
   .section{
     padding: 10px 0;
+  }
+  .list__item:not(:last-child){
+    margin-right: 0;
   }
   @keyframes kady {
     0%{
